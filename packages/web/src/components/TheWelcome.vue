@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
-import axios from 'axios'
+import { useHttp } from '@/utils/http'
 
+const http = useHttp()
 const counterStore = useCounterStore()
 
 const msg = ref('')
 
-onMounted(() => {
-  axios
-    .get('http://localhost:3001')
-    .then((res) => (msg.value = res.data.msg as string))
-    .catch(() => (msg.value = 'Oops! Http Error!'))
+onMounted(async () => {
+  try {
+    msg.value = (await http.get('/msg')).data.msg as string
+  } catch (error) {
+    msg.value = 'Oops! Something went wrong!'
+  }
 })
 </script>
 
