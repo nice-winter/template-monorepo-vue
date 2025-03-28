@@ -1,0 +1,33 @@
+{
+  "name": "template-ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint --ext .ts ./src",
+    "lint:fix": "eslint --fix --ext .ts ./src",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch ./src/index.ts --nolazy",
+    "start": "node ./dist/index.js",
+    "build:dev": "rollup -c --configPlugin typescript --environment BUILD:development",
+    "build": "rollup -c --configPlugin typescript --configImportAttributesKey with --environment BUILD:production"
+  },
+  "author": "babyw1nter",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.37.0",
+    "rollup-plugin-delete": "^3.0.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsx": "^4.19.3"
+  }
+}

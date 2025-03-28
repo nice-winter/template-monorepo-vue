@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "noEmit": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "lib": ["ESNext", "Decorators"],
+    "paths": { "@/*": ["src/*"] },
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
