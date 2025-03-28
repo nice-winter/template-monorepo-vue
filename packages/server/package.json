@@ -1,6 +1,6 @@
 {
   "name": "package-server",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -16,8 +16,6 @@
     "build:dev": "rollup -c --configPlugin typescript --environment BUILD:development",
     "build": "rollup -c --configPlugin typescript --configImportAttributesKey with --environment BUILD:production"
   },
-  "author": "babyw1nter",
-  "license": "MIT",
   "dependencies": {
     "@fastify/cors": "^11.0.1",
     "@fastify/middie": "^9.0.3",
