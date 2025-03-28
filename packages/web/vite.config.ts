@@ -10,7 +10,14 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   server: {
     host: '0.0.0.0',
-    strictPort: true
+    strictPort: true,
+    proxy: {
+      '/api/v1': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/v1/, '')
+      }
+    }
   },
   plugins: [
     vue(),
