@@ -1,6 +1,3 @@
 {
-  "$schema": "https://json.schemastore.org/lintstagedrc.schema.json",
-  "*": [
-    "prettier --write"
-  ]
+  "$schema": "https://json.schemastore.org/lintstagedrc.schema.json"
 }
