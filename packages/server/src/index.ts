@@ -9,7 +9,7 @@ const app = Fastify({
 app.register(fastifyMiddie)
 app.register(fastifyCors, {})
 
-app.get('/', async (request, reply) => {
+app.get('/msg', async (request, reply) => {
   return { msg: 'This is a message from the server!' }
 })
 
