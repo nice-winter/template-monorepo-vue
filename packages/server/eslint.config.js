@@ -27,6 +27,7 @@ export default tseslint.config(
       }
     }
   },
+  eslintConfigPrettier,
 
   {
     name: 'app/global-rules',
@@ -38,6 +39,5 @@ export default tseslint.config(
       'require-atomic-updates': 'off',
       'no-async-promise-executor': 'off'
     }
-  },
-  eslintConfigPrettier
+  }
 )
