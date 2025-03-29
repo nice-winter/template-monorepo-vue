@@ -10,7 +10,7 @@
     "dev:server": "pnpm -F package-server dev",
     "dev:web": "pnpm -F package-web dev",
     "build": "pnpm -r build",
-    "clean:dist": "echo \"Removing all dist directories from all packages...\" && rimraf packages/*/dist",
+    "clean:dist": "echo \"Removing all dist directories from all apps...\" && rimraf apps/*/dist",
     "up:all": "pnpm -r update --latest",
     "postinstall": "node ./scripts/postinstall.js"
   },

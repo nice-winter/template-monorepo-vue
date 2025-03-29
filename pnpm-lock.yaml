@@ -52,7 +52,7 @@ importers:
         specifier: ^8.28.0
         version: 8.28.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.2)
 
-  packages/server:
+  apps/backend:
     dependencies:
       '@fastify/cors':
         specifier: ^11.0.1
@@ -89,7 +89,7 @@ importers:
         specifier: ^4.19.3
         version: 4.19.3
 
-  packages/web:
+  apps/frontend:
     dependencies:
       axios:
         specifier: ^1.8.4
