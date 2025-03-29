@@ -32,6 +32,7 @@ export default defineConfigWithVueTs(
   skipFormatting,
 
   {
+    name: 'app/global-rules',
     files: ['**/*.{ts,mts,tsx,vue}'],
     rules: {
       'no-unref': 'off',
