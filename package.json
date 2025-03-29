@@ -7,10 +7,11 @@
     "lint": "pnpm -r lint",
     "format": "pnpm -r format",
     "test": "pnpm -r test",
-    "dev:server": "pnpm --filter package-server dev",
-    "dev:web": "pnpm --filter package-web dev",
+    "dev:server": "pnpm -F package-server dev",
+    "dev:web": "pnpm -F package-web dev",
     "build": "pnpm -r build",
     "clean:dist": "echo \"Removing all dist directories from all packages...\" && rimraf packages/*/dist",
+    "up:all": "pnpm -r update --latest",
     "postinstall": "node ./scripts/postinstall.js"
   },
   "keywords": [],
