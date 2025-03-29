@@ -34,7 +34,7 @@ export default tseslint.config(
     files: ['**/*.{ts,tsx,mts,cts}'],
     rules: {
       'no-undef': 'off',
-      'no-unused-vars': 'warn',
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
       'require-atomic-updates': 'off',
       'no-async-promise-executor': 'off'
