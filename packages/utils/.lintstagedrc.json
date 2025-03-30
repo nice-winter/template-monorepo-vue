@@ -1,5 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/lintstagedrc.schema.json",
-  "*.{js?(x),json}": ["prettier --log-level debug --write"],
-  "*.ts?(x)": ["eslint --fix", "prettier --parser=typescript --write"]
+  "*.{js?(x),json}": [
+    "prettier --debug-check --log-level debug"
+  ],
+  "*.ts?(x)": [
+    "eslint --fix",
+    "prettier --parser=typescript --write"
+  ]
 }
