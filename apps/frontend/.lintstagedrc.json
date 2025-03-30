@@ -1,7 +1,4 @@
 {
   "$schema": "https://json.schemastore.org/lintstagedrc.schema.json",
-  "src/**/*": [
-    "eslint --fix",
-    "prettier --write"
-  ]
+  "src/**/*": ["eslint --fix", "prettier --write"]
 }

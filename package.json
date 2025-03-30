@@ -20,7 +20,7 @@
   "description": "",
   "packageManager": "pnpm@10.7.0",
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged --debug"
+    "pre-commit": "npx lint-staged"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
