@@ -1,0 +1,2 @@
+[*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}]
+max_line_length = 80
