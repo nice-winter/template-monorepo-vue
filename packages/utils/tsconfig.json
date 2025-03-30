@@ -1,3 +1,26 @@
 {
-  "extends": "configs/tsconfig/tsconfig.node.json"
+  "extends": "configs/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+
+    "moduleResolution": "Bundler",
+
+    "lib": ["ESNext", "Decorators"],
+
+    "paths": { "@/*": ["src/*"] },
+
+    "importHelpers": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*",
+    "eslint.config.*",
+    "rollup.config.*",
+    "prettier.config.*"
+  ],
+  "exclude": ["node_modules", "dist"]
 }
