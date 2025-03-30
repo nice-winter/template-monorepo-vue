@@ -7,10 +7,10 @@
     "lint": "pnpm -r lint",
     "format": "pnpm -r format",
     "test": "pnpm -r test",
-    "dev:server": "pnpm -F package-server dev",
-    "dev:web": "pnpm -F package-web dev",
+    "dev:backend": "pnpm -F backend dev",
+    "dev:frontend": "pnpm -F frontend dev",
     "build": "pnpm -r build",
-    "clean:dist": "echo \"Removing all dist directories from all apps...\" && rimraf apps/*/dist",
+    "clean:dist": "echo \"Removing all dist directories from all apps and packages...\" && rimraf apps/*/dist && rimraf packages/*/dist",
     "up:all": "pnpm -r update --latest",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "node ./scripts/postinstall.js"
