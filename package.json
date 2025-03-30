@@ -12,6 +12,7 @@
     "build": "pnpm -r build",
     "clean:dist": "echo \"Removing all dist directories from all apps...\" && rimraf apps/*/dist",
     "up:all": "pnpm -r update --latest",
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "node ./scripts/postinstall.js"
   },
   "keywords": [],
