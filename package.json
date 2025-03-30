@@ -38,6 +38,6 @@
     "typescript-eslint": "^8.28.0"
   },
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "@dotenvx/dotenvx": "^1.39.0"
   }
 }

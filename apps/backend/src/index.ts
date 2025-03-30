@@ -13,4 +13,4 @@ app.get('/msg', async (request, reply) => {
   return { msg: 'This is a message from the server!' }
 })
 
-await app.listen({ port: 3001 })
+await app.listen({ host: process.env.HOST, port: Number(process.env.PORT) })
