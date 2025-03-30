@@ -2,6 +2,7 @@
   "extends": "shared-configs/tsconfig/tsconfig.base.json",
   "compilerOptions": {
     "noEmit": true,
+    "allowJs": true,
 
     "rootDir": ".",
     "baseUrl": ".",
