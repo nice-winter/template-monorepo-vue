@@ -1,8 +1,6 @@
 {
   "extends": "shared-configs/tsconfig/tsconfig.base.json",
   "compilerOptions": {
-    "noEmit": true,
-
     "outDir": "dist",
     "rootDir": ".",
     "baseUrl": ".",

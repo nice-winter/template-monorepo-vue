@@ -66,6 +66,9 @@ importers:
       fastify:
         specifier: ^5.2.2
         version: 5.2.2
+      utils:
+        specifier: workspace:*
+        version: link:../../packages/utils
     devDependencies:
       '@rollup/plugin-commonjs':
         specifier: ^28.0.3
@@ -103,6 +106,9 @@ importers:
       pinia:
         specifier: ^3.0.1
         version: 3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
+      utils:
+        specifier: workspace:*
+        version: link:../../packages/utils
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.2)

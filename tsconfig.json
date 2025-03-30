@@ -13,5 +13,10 @@
     "importHelpers": true,
     "experimentalDecorators": true
   },
-  "include": ["scripts/*", "eslint.config.*", "rollup.config.*", "prettier.config.*"]
+  "include": [
+    "scripts/*",
+    "eslint.config.*",
+    "rollup.config.*",
+    "prettier.config.*"
+  ]
 }

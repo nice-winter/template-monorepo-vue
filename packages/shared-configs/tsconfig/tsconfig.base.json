@@ -2,8 +2,6 @@
   "extends": "@tsconfig/node22/tsconfig.json",
 
   "compilerOptions": {
-    "noEmit": true,
-
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -15,7 +13,9 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
 
-    "preserveWatchOutput": true
+    "preserveWatchOutput": true,
+
+    "composite": true
   },
 
   "files": [],

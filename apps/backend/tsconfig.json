@@ -11,11 +11,19 @@
 
     "lib": ["ESNext", "Decorators"],
 
-    "paths": { "@/*": ["src/*"] },
+    "paths": {
+      "@/*": ["src/*"],
+      "@utils/*": ["../../packages/utils/src/*"]
+    },
 
     "importHelpers": true,
     "experimentalDecorators": true
   },
+  "references": [
+    {
+      "path": "../../packages/utils/tsconfig.json"
+    }
+  ],
   "include": [
     "src/**/*",
     "eslint.config.*",

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
 import { useHttp } from '@/utils/http'
+import { add } from '@utils/index'
 
 const http = useHttp()
 const counterStore = useCounterStore()
@@ -18,6 +19,7 @@ onMounted(async () => {
 
 <template>
   <p>{{ msg }}</p>
+  <p>{{ add(3, 4) }}</p>
   <button :title="`Count: ${counterStore.count}`" @click="counterStore.increment()">
     Count: {{ counterStore.count }}
   </button>
