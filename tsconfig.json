@@ -1,23 +1,22 @@
 {
-  "extends": "@tsconfig/node22/tsconfig.json",
-
+  "extends": "configs/tsconfig/tsconfig.base.json",
   "compilerOptions": {
     "noEmit": true,
 
-    "target": "ESNext",
-    "module": "ESNext",
+    "rootDir": ".",
+    "baseUrl": ".",
+
     "moduleResolution": "Bundler",
 
-    "resolveJsonModule": true,
+    "lib": ["ESNext", "Decorators"],
 
-    "forceConsistentCasingInFileNames": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-
-    "preserveWatchOutput": true
+    "importHelpers": true,
+    "experimentalDecorators": true
   },
-
-  "files": [],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "scripts/*",
+    "eslint.config.*",
+    "rollup.config.*",
+    "prettier.config.*"
+  ]
 }
