@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "configs": "workspace:*"
+    "shared-configs": "workspace:*"
   }
 }

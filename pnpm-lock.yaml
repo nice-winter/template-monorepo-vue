@@ -21,9 +21,6 @@ importers:
       '@types/node':
         specifier: ^22.13.14
         version: 22.13.14
-      configs:
-        specifier: workspace:*
-        version: link:packages/configs
       eslint:
         specifier: ^9.23.0
         version: 9.23.0(jiti@2.4.2)
@@ -42,6 +39,9 @@ importers:
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
+      shared-configs:
+        specifier: workspace:*
+        version: link:packages/shared-configs
       simple-git-hooks:
         specifier: ^2.12.1
         version: 2.12.1
@@ -88,6 +88,9 @@ importers:
       rollup-plugin-typescript2:
         specifier: ^0.36.0
         version: 0.36.0(rollup@4.38.0)(typescript@5.8.2)
+      shared-configs:
+        specifier: workspace:*
+        version: link:../../packages/shared-configs
       tsx:
         specifier: ^4.19.3
         version: 4.19.3
@@ -165,13 +168,13 @@ importers:
         specifier: ^2.2.8
         version: 2.2.8(typescript@5.8.2)
 
-  packages/configs: {}
+  packages/shared-configs: {}
 
   packages/utils:
     devDependencies:
-      configs:
+      shared-configs:
         specifier: workspace:*
-        version: link:../configs
+        version: link:../shared-configs
 
 packages:
 
