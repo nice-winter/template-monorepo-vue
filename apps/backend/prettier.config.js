@@ -1,12 +1,3 @@
-import rootConfig from '../../prettier.config.js'
+import config from 'shared-configs/prettier/index.js'
 
-/**
- * @see https://prettier.io/docs/configuration
- * @type {import('prettier').Config}
- */
-const config = {
-  printWidth: 80,
-  singleAttributePerLine: true
-}
-
-export default Object.assign(rootConfig, config)
+export default config

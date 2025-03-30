@@ -1,5 +1,5 @@
 {
-  "extends": "configs/tsconfig/tsconfig.base.json",
+  "extends": "shared-configs/tsconfig/tsconfig.base.json",
   "compilerOptions": {
     "noEmit": true,
 
@@ -13,10 +13,5 @@
     "importHelpers": true,
     "experimentalDecorators": true
   },
-  "include": [
-    "scripts/*",
-    "eslint.config.*",
-    "rollup.config.*",
-    "prettier.config.*"
-  ]
+  "include": ["scripts/*", "eslint.config.*", "rollup.config.*", "prettier.config.*"]
 }
