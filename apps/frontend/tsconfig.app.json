@@ -10,6 +10,7 @@
       "@utils/*": ["../../packages/utils/src/*"]
     }
   },
+
   "references": [
     {
       "path": "../../packages/utils/tsconfig.json"
