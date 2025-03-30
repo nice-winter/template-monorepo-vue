@@ -162,6 +162,14 @@ importers:
         specifier: ^2.2.8
         version: 2.2.8(typescript@5.8.2)
 
+  packages/configs: {}
+
+  packages/utils:
+    devDependencies:
+      configs:
+        specifier: workspace:*
+        version: link:../configs
+
 packages:
 
   '@ampproject/remapping@2.3.0':

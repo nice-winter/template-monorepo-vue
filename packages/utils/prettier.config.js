@@ -1,4 +1,4 @@
-import rootConfig from '../../prettier.config.js'
+import rootConfig from 'configs/prettier/prettier.config.js'
 
 /**
  * @see https://prettier.io/docs/configuration
