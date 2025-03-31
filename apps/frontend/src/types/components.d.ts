@@ -12,5 +12,8 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./../components/TheWelcome.vue')['default']
+    UApp: typeof import('./../../../../node_modules/.pnpm/@nuxt+ui@3.0.2_@babel+parser@7.27.0_axios@1.8.4_embla-carousel@8.5.2_typescript@5.8.2_v_4b46b36f8592c8362dea6df5663769d8/node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
+    UButton: typeof import('./../../../../node_modules/.pnpm/@nuxt+ui@3.0.2_@babel+parser@7.27.0_axios@1.8.4_embla-carousel@8.5.2_typescript@5.8.2_v_4b46b36f8592c8362dea6df5663769d8/node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
+    ULinkBase: typeof import('./../../../../node_modules/.pnpm/@nuxt+ui@3.0.2_@babel+parser@7.27.0_axios@1.8.4_embla-carousel@8.5.2_typescript@5.8.2_v_4b46b36f8592c8362dea6df5663769d8/node_modules/@nuxt/ui/dist/runtime/components/LinkBase.vue')['default']
   }
 }

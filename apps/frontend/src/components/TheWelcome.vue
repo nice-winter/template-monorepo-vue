@@ -11,7 +11,7 @@ const msg = ref('')
 onMounted(async () => {
   try {
     msg.value = (await http.get('/msg')).data.msg as string
-  } catch (error) {
+  } catch {
     msg.value = 'Oops! Something went wrong!'
   }
 })
@@ -20,7 +20,7 @@ onMounted(async () => {
 <template>
   <p>{{ msg }}</p>
   <p>{{ add(3, 4) }}</p>
-  <button :title="`Count: ${counterStore.count}`" @click="counterStore.increment()">
+  <UButton :title="`Count: ${counterStore.count}`" @click="counterStore.increment()">
     Count: {{ counterStore.count }}
-  </button>
+  </UButton>
 </template>

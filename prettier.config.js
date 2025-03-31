@@ -1,3 +1,3 @@
-import config from 'shared-configs/prettier/index.js'
+import config from 'shared-configs/prettier/base.js'
 
 export default config
