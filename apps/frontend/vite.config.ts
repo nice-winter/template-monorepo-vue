@@ -37,9 +37,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@utils': fileURLToPath(
-        new URL('../../packages/utils/src', import.meta.url)
-      )
+      '@utils': fileURLToPath(new URL('../../packages/utils/src', import.meta.url))
     }
   },
   css: {
