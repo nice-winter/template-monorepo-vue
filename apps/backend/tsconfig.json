@@ -28,7 +28,8 @@
     "src/**/*",
     "eslint.config.*",
     "rollup.config.*",
-    "prettier.config.*"
+    "prettier.config.*",
+    "package.json"
   ],
   "exclude": ["node_modules", "dist"]
 }
