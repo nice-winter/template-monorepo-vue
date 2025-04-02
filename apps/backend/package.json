@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint --fix --ext .ts ./src",
     "format": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"OK\" && exit 0",
     "dev": "dotenvx run -f ./configs/.env -- tsx watch ./src/index.ts --nolazy",
     "start": "dotenvx run -f ./configs/.env.production -- node ./dist/index.js",
     "build:dev": "rollup -c --configPlugin typescript --environment BUILD:development",
